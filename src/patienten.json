@@ -1,0 +1,40 @@
+{
+    "patienten": [
+        {
+            "id": 1,
+            "allgemein": {
+                "vorname": "Simon",
+                "nachname": "Giek",
+                "alter": 17,
+                "addresse": {
+                    "straße": "Karlstraße",
+                    "hausnummer": 2,
+                    "plz": 75196,
+                    "ort": "Remchingen"
+                },
+                "nummern": {
+                    "privat": 1
+                },
+                "rechnungsempfaenger": "Simon"
+            }
+        },
+        {
+            "id": 2,
+            "allgemein": {
+                "vorname": "Manuel",
+                "nachname": "Giek",
+                "alter": 17,
+                "addresse": {
+                    "straße": "Karlstraße",
+                    "hausnummer": 2,
+                    "plz": 75196,
+                    "ort": "Remchingen"
+                },
+                "nummern": {
+                    "privat": 1
+                },
+                "rechnungsempfaenger": "Simon"
+            }
+        }
+    ]
+}

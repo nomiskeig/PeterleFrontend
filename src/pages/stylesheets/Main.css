@@ -1,0 +1,16 @@
+.MainAlles {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffff99;
+}
+
+.MainAllgemeinDaten {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 640px;
+    align-content: flex-start;
+    
+
+}
+
