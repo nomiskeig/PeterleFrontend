@@ -2,10 +2,12 @@
     "patienten": [
         {
             "id": 1,
+            "privat": true,
             "allgemein": {
                 "vorname": "Simon",
                 "nachname": "Giek",
                 "alter": 17,
+                "gebdatum": "22.01.1999",
                 "addresse": {
                     "straße": "Karlstraße",
                     "hausnummer": 2,
@@ -13,13 +15,16 @@
                     "ort": "Remchingen"
                 },
                 "nummern": {
-                    "privat": 1
+                    "mobil": "1134",
+                    "privat": "34563",
+                    "arbeit": "467856"
                 },
                 "rechnungsempfaenger": "Simon"
             }
         },
         {
             "id": 2,
+            "privat": false,
             "allgemein": {
                 "vorname": "Manuel",
                 "nachname": "Giek",
@@ -33,7 +38,7 @@
                 "nummern": {
                     "privat": 1
                 },
-                "rechnungsempfaenger": "Simon"
+                "rechnungsempfaenger": "Manuel"
             }
         }
     ]

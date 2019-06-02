@@ -1,10 +1,10 @@
 .TextBox {
 
-    width: 300px;
+    
     border-color: grey;
     padding-left: 10px;
-    padding-right: 10px;
-    height: 110px;
+    padding: 0px 4px 0px 4px;
+    height: 80px;
     font-size: 20px;
     margin: 0px 0px 0px 0px;
 
@@ -14,6 +14,7 @@
     font-weight: bold;
     text-decoration: underline;
     padding-left: 5px;
+    margin: 4px 4px 4px 0px
     
 }
 
@@ -22,5 +23,7 @@
     box-shadow: inset 0 0 3px #000000;
     padding: 4px 4px 4px 10px;
     height: 28px;
+    margin: 0px 0px 0px 0px
     
 }
+

@@ -2,6 +2,7 @@
 import React from "react";
 import queryString from "query-string"
 import TextBox from "../elements/TextBox";
+import PassiveCheckBox from "../elements/PassiveCheckBox"
 import ReactTable from "react-table";
 import "./stylesheets/Main.css";
 import "../react-table.css";
@@ -69,11 +70,11 @@ class Main extends React.Component {
                         [
                             {
                                 id: "vorname",
-                                value: queryVorname
+                                value: queryVorname.toLowerCase()
                             },
                             {
                                 id: "nachname",
-                                value: queryNachname
+                                value: queryNachname.toLowerCase()
                             }
                         ]
                     }
@@ -85,7 +86,11 @@ class Main extends React.Component {
                     rowsText={"Reihen"}
                     pageText={"Seite"}
                     ofText={"von"}
+                    noDataText={"Keine Ergebnisse"}
                     //minRows={0}
+                    defaultFilterMethod={(filter, row) =>
+                        row[filter.id].toLowerCase().startsWith(filter.value) ||
+                        row[filter.id].toLowerCase().endsWith(filter.value)}
                     getTrProps={(state, rowInfo) => { // Für Reihenauswahl
                         if (rowInfo && rowInfo.row) {
                             return {
@@ -110,9 +115,16 @@ class Main extends React.Component {
                 />
                 <div className="MainAllgemeinDaten">
 
-                <TextBox titel="Vorname" text={patientGesamt.allgemein.vorname}></TextBox>
-                <TextBox titel="Nachname" text={patientGesamt.allgemein.nachname}></TextBox>
-                <TextBox titel="PLZ" text={patientGesamt.allgemein.addresse.plz}></TextBox>
+                <TextBox titel="Vorname" text={patientGesamt.allgemein.vorname} width={"300px"}></TextBox>
+                <TextBox titel="Nachname" text={patientGesamt.allgemein.nachname }width={"300px"}></TextBox>
+                <TextBox titel="Wohnort" text={patientGesamt.allgemein.addresse.plz + " " + patientGesamt.allgemein.addresse.ort} width={"300px"}></TextBox>
+                <TextBox titel="Geb-Datum" text={patientGesamt.allgemein.gebdatum} width={"125px"}></TextBox>
+                <PassiveCheckBox titel="Privat" checked={patientGesamt.privat}></PassiveCheckBox>
+                <TextBox titel="Pat.-Nr." text={patientGesamt.id} width={"90px"}></TextBox>
+                <TextBox titel="Straße" text={patientGesamt.allgemein.addresse.straße} width={"300px"}></TextBox>
+                <TextBox titel="Telefon Mobil" text={patientGesamt.allgemein.nummern.mobil} width={"300px"}></TextBox>
+                <TextBox titel="Telefon Privat" text={patientGesamt.allgemein.nummern.privat} width={"300px"}></TextBox>
+                <TextBox titel="Telefon Arbeit" text={patientGesamt.allgemein.nummern.arbeit} width={"300px"}></TextBox>
                 
                 </div>
 
