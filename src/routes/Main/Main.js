@@ -172,7 +172,9 @@ class Main extends React.Component {
 					</div>
 					<div className="NotizenDiv">
 						<div className="BemerkungHeadline">Bemerkungen</div>
-						<div className="Bemerkung">{patientGesamt.allgemein.bemerkung}</div>
+						<div className="Bemerkung">
+							{patientGesamt.allgemein.bemerkungen}
+						</div>
 						<div />
 						<div>Krankheiten</div>
 						<div className="Bemerkung">

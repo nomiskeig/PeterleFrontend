@@ -1,6 +1,7 @@
 import React from "react";
 import { PatAllgemein } from "../../components/PatAllgemein/PatAllgemein";
 import "../../utils/GlobalStyles.css";
+import "../../utils/GlobalComponents";
 import "./Kontakt.css";
 
 var patientenData = require("../../patienten.json");
@@ -19,8 +20,20 @@ class Kontakt extends React.Component {
 		);
 
 		return (
-			<div className="KontaktAlles">
+			<div className="KontaktAlles BackgroundLightblue Grid3">
 				<PatAllgemein data={patientGesamt} />
+				<div className="FlexVertikal">
+					<div className="Beschriftung">Bemerkungen</div>
+					<div className="Fließtext FlexGrow">
+						{patientGesamt.allgemein.bemerkungen}
+					</div>
+				</div>
+				<div className="FlexVertikal">
+					<div className="Beschriftung">Krankheiten</div>
+					<div className="Fließtext FlexGrow">
+						{patientGesamt.allgemein.krankheiten}
+					</div>
+				</div>
 			</div>
 		);
 	}

@@ -7,6 +7,11 @@
     flex-grow: 1
 }
 
+.FlexVertikal {
+    display: flex;
+    flex-direction: column;
+}
+
 .Margin {
     margin: 10px;
 }
@@ -15,8 +20,12 @@
     margin: 20px;
 }
 
-.Background {
+.BackgroundYellow {
     background-color: #ffff99
+}
+
+.BackgroundLightblue {
+    background-color: lightblue;
 }
 
 .Box {
@@ -24,11 +33,43 @@
     box-shadow: inset 0 0 3px #000000;
     padding: 8px;
     font-size: 20px;
-    margin: 5px 10px 5px 10px
+    margin: 5px 10px 5px 10px;
+    min-width: 50px
 }
 
 .CheckBoxPassiv {
     height: 20px;
     width: 20px;
     margin: 4px
+}
+
+.Grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Grid4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.Beschriftung {
+    text-decoration: underline;
+    margin-left: 5px
+}
+
+.Fließtext {
+    background-color: lightgrey;
+    border: 2px solid black;
+    overflow: auto;
+    margin: 5px
+}
+
+.Unterstrichen {
+    text-decoration: underline;
 }

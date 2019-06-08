@@ -2,6 +2,7 @@ import React from "react";
 import "./PattAllgemein.css";
 import TextBox from "../TextBox/TextBox";
 import "../../utils/GlobalStyles.css";
+import PassiveCheckBox from "../CheckBox/PassiveCheckBox";
 
 function PatAllgemein(props) {
 	return (
@@ -11,6 +12,10 @@ function PatAllgemein(props) {
 			<div className="Flex">
 				<div className="Box">{props.data.allgemein.addresse.plz}</div>
 				<div className="Box FlexGrow">{props.data.allgemein.addresse.ort}</div>
+			</div>
+			<div className="Flex">
+				<div className="Box">{props.data.allgemein.gebdatum}</div>
+				<PassiveCheckBox titel="Privat" checked={props.data.privat} />
 			</div>
 		</div>
 	);
