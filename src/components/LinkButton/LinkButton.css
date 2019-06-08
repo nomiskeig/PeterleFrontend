@@ -1,15 +1,6 @@
 .LinkButton {
-    width: 140px;
-    height: 40px;
-    margin: 0px 0px 0px 0px;
-    font-weight: bold;
-    font-size: 20px;
-    
+	width: 140px;
+	height: 40px;
+	font-weight: bold;
+	font-size: 20px;
 }
-
-.LinkButtonDiv {
-    width: 140px;
-    height: 40px
-}
-
-

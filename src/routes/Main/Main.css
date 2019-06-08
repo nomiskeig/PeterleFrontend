@@ -1,31 +1,61 @@
 .MainAlles {
-    display: flex;
-    flex-direction: row;
-    background-color: #ffff99;
+	display: grid;
+	flex-direction: row;
+	background-color: #ffff99;
+	height: 80vh;
+	width: 100vw;
+	flex-wrap: wrap;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-row-gap: 0px;
+	grid-column-gap: 20px;
 }
 
 .MainAllgemeinDaten {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 640px;
-    align-content: flex-start;
-    
-
+	display: grid;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 640px;
+	align-content: flex-start;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-.MainButtons{
-    padding: 20px 20px 20px 20px;
-    display: flex;
-    grid-template-columns: 500px;
-    height: 300px
+.MainButtons {
+	padding: 20px 20px 20px 20px;
+	display: flex;
+	height: 170px;
+	width: 500px;
+	flex-wrap: wrap;
+	align-content: flex-start;
 }
 
-.Headline{
-    padding: 10px 10px 10px 10px;
-    background-color: #ffff99;
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 4px
+.Headline {
+	padding: 10px 10px 10px 10px;
+	background-color: #ffff99;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 4px;
 }
 
+.MainButtons .LinkButton {
+	margin: 10px;
+}
+
+.Bemerkung {
+	height: 140px;
+	background-color: lightgrey;
+
+	border: 2px solid black;
+	overflow: auto;
+}
+
+.NotizenDiv {
+	display: grid;
+	grid-template-rows: 1fr 6fr 1fr 1fr 6fr;
+	margin-right: 20px;
+}
+
+.GebPrivNr {
+	display: flex;
+}

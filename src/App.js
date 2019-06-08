@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Main from "./routes/Main/Main";
 import Suche from "./routes/Suche/Suche";
+import Kontakt from "./routes/Kontakt/Kontakt";
+
 import SideNav, {
 	Toggle,
 	Nav,
@@ -17,6 +19,7 @@ function AppRouter() {
 		<Router forceRefresh={true}>
 			<Route path="/" exact component={Suche} />
 			<Route path="/Main/:id" component={Main} />
+			<Route path="/Kontakt/:id" component={Kontakt} />
 		</Router>
 	);
 }

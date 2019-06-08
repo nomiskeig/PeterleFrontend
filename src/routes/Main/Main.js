@@ -77,7 +77,11 @@ class Main extends React.Component {
 								value: queryNachname.toLowerCase()
 							}
 						]}
-						style={{ height: "300px", margin: "10px", background: "lightgray" }}
+						style={{
+							height: "300px",
+							margin: "20px",
+							background: "lightgray"
+						}}
 						showPagination={false}
 						previousText={"Zurück"}
 						nextText={"Vor"}
@@ -112,7 +116,6 @@ class Main extends React.Component {
 							}
 						}}
 					/>
-
 					<div className="MainAllgemeinDaten">
 						<TextBox
 							titel="Vorname"
@@ -133,13 +136,19 @@ class Main extends React.Component {
 							}
 							width={"300px"}
 						/>
-						<TextBox
-							titel="Geb-Datum"
-							text={patientGesamt.allgemein.gebdatum}
-							width={"125px"}
-						/>
-						<PassiveCheckBox titel="Privat" checked={patientGesamt.privat} />
-						<TextBox titel="Pat.-Nr." text={patientGesamt.id} width={"90px"} />
+						<div className="GebPrivNr">
+							<TextBox
+								titel="Geb-Datum"
+								text={patientGesamt.allgemein.gebdatum}
+								width={"125px"}
+							/>
+							<PassiveCheckBox titel="Privat" checked={patientGesamt.privat} />
+							<TextBox
+								titel="Pat.-Nr."
+								text={patientGesamt.id}
+								width={"90px"}
+							/>
+						</div>
 						<TextBox
 							titel="Straße"
 							text={patientGesamt.allgemein.addresse.straße}
@@ -161,10 +170,20 @@ class Main extends React.Component {
 							width={"300px"}
 						/>
 					</div>
-
+					<div className="NotizenDiv">
+						<div className="BemerkungHeadline">Bemerkungen</div>
+						<div className="Bemerkung">{patientGesamt.allgemein.bemerkung}</div>
+						<div />
+						<div>Krankheiten</div>
+						<div className="Bemerkung">
+							{patientGesamt.allgemein.krankheiten}
+						</div>
+					</div>
+					<div>Platzhalter 1</div>
+					<div>Platzhalter 2</div>
 					<div className="MainButtons">
 						<LinkButton path="/" search="" name="Suche" />
-						<LinkButton name="Kontakt" />
+						<LinkButton path={"/Kontakt/" + this.state.id} name="Kontakt" />
 						<LinkButton name="Details" />
 						<LinkButton name="Dorn" />
 						<LinkButton name="Amnese" />
