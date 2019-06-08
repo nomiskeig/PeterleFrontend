@@ -1,0 +1,31 @@
+.MainAlles {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffff99;
+}
+
+.MainAllgemeinDaten {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 640px;
+    align-content: flex-start;
+    
+
+}
+
+.MainButtons{
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    grid-template-columns: 500px;
+    height: 300px
+}
+
+.Headline{
+    padding: 10px 10px 10px 10px;
+    background-color: #ffff99;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 4px
+}
+
