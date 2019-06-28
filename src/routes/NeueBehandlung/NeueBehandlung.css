@@ -1,0 +1,12 @@
+.InputTextarea {
+    height: 50%;
+    width: 500px
+}
+
+.textfeldInput {
+    width: 100%
+}
+
+.Grid2 {
+    grid-template-columns: 1fr 4fr
+}

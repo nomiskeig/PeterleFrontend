@@ -2,7 +2,7 @@
 	display: grid;
 	flex-direction: row;
 	background-color: #ffff99;
-	height: 80vh;
+	height: 100%;
 	width: 100vw;
 	flex-wrap: wrap;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -45,7 +45,6 @@
 .Bemerkung {
 	height: 140px;
 	background-color: lightgrey;
-
 	border: 2px solid black;
 	overflow: auto;
 }

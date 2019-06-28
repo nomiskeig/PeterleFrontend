@@ -1,1 +1,8 @@
-.KontaktAlles {}
+.KontaktAlles {
+    grid-template-rows: 50% 40% 10%;
+    height: 100vh
+}
+
+button {
+    margin-left: 20px
+}

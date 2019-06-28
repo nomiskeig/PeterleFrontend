@@ -14,46 +14,60 @@ class Suche extends React.Component {
 			wohnort: "",
 			id: ""
 		};
-		this.handleNachname = this.handleNachname.bind(this);
-		this.handleVorname = this.handleVorname.bind(this);
-		this.handleRechnung = this.handleRechnung.bind(this);
-		this.handleWohnort = this.handleWohnort.bind(this);
+
 		this.handleButtonClick = this.handleButtonClick.bind(this);
 	}
 	render() {
 		return (
-			<div className="SucheAlles">
-				<h1>Suche</h1>
-				<InputBox nameFromParent="Vorname" onChangeHier={this.handleVorname} />
-				<InputBox
-					nameFromParent="Nachname"
-					onChangeHier={this.handleNachname}
-				/>
-				<InputBox
-					nameFromParent="Rechnungsempfänger"
-					onChangeHier={this.handleRechnung}
-				/>
-				<InputBox nameFromParent="Wohnort" onChangeHier={this.handleWohnort} />
-				<button onClick={this.handleButtonClick}>OK</button>
-				<h2>{this.state.id}</h2>
+			<div className="SucheAlles ">
+				<h1>P.E.T.E.R.L.E</h1>
+				<div className="rand">
+					<h1>Suchen</h1>
+					<div className="Input part">
+						<label>Vorname:</label>
+						<input
+							type="text"
+							onChange={data => this.setState({ vorname: data.target.value })}
+							placeholder="Bitte eingeben"
+						/>
+					</div>
+					<div className="Input part">
+						<label>Nachname:</label>
+						<input
+							type="text"
+							onChange={data => this.setState({ nachname: data.target.value })}
+							placeholder="Bitte eingeben"
+						/>
+					</div>
+					<div className="Input part">
+						<label>Wohnort:</label>
+						<input
+							type="text"
+							onChange={data => this.setState({ wohnort: data.target.value })}
+							placeholder="Bitte eingeben"
+						/>
+					</div>
+					<div className="Input part">
+						<label>Rechn. Empf.:</label>
+						<input
+							type="text"
+							onChange={data => this.setState({ rechnung: data.target.value })}
+							placeholder="Bitte eingeben"
+						/>
+					</div>
+					<button className="part" onClick={this.handleButtonClick}>
+						Suchen
+					</button>
+					<button
+						className="part breiterButton"
+						onClick={() => this.props.history.push("/Main")}
+					>
+						{" "}
+						Weiter ohne Suche{" "}
+					</button>
+				</div>
 			</div>
 		);
-	}
-
-	handleNachname(data) {
-		this.setState({ nachname: data });
-	}
-
-	handleVorname(data) {
-		this.setState({ vorname: data });
-	}
-
-	handleRechnung(data) {
-		this.setState({ rechnung: data });
-	}
-
-	handleWohnort(data) {
-		this.setState({ wohnort: data });
 	}
 
 	handleButtonClick() {

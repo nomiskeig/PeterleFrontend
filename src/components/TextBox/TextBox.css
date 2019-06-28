@@ -1,13 +1,10 @@
 .TextBox {
-
-    
     border-color: grey;
     padding-left: 10px;
     padding: 0px 4px 0px 4px;
     height: 80px;
     font-size: 20px;
     margin: 0px 0px 0px 0px;
-
 }
 
 .TextBoxHead {
@@ -15,7 +12,6 @@
     text-decoration: underline;
     padding-left: 5px;
     margin: 4px 4px 4px 0px
-    
 }
 
 .TextBoxBody {
@@ -24,6 +20,4 @@
     padding: 4px 4px 4px 10px;
     height: 28px;
     margin: 0px 0px 0px 0px
-    
 }
-

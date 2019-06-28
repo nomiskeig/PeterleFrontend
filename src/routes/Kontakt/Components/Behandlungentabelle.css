@@ -1,0 +1,9 @@
+.ReactTable .rt-table {
+    width: 100%;
+}
+
+.ReactTable {}
+
+.ReactTable .rt-td, .ReactTable .rt-th {
+    white-space: normal;
+}

@@ -22,7 +22,18 @@
 				"rechnungsempfaenger": "Simon",
 				"bemerkungen": "Dies das tralladksgf nöalskngöakod sfgnoifnbpa ofignpd ofingö akfngökfdngoi afngöadfkngöksdfnb ölksdfnböksfdnbklsdnfbiodfnboidnö föb kldfnöbiodnböoid nföoirnböoirnöbionröoignöiogn  söoinöhgoisroighisdkfgjklk jksdlfjgöiojgsokj ölk jösdjfgöoij ökj ösdjfgöio esrjögio ö",
 				"krankheiten": "Fieber Kopfweh dies das aksgöksngöknsgökanfhoiajgoijaoignaiergnauervbabgüdiobaoigb oibvo ibaüogibapoibvoib pobvpaoubgoaiebervio bpcsbvpouabgpoiuarbguibavio bsubvpaubgparoibg"
-			}
+			},
+			"behandlungen": [
+				{
+					"id": 1,
+					"datum": "1.7.2018",
+					"art": "Besuch",
+					"masnahme": "Gegenmittel gegeben",
+					"mittel": "Mittel",
+					"notiz": "Hier könnte Ihadfasdfasdfasdfasdfsdfdsre Notiz stehen",
+					"beobachten": "Hier steht eine Beobachtung"
+				}
+			]
 		},
 		{
 			"id": 2,

@@ -24,6 +24,7 @@ class InputBox extends React.Component {
 						type="text"
 						value={this.state.value}
 						onChange={this.handleChange}
+						placeholder="Bitte eingeben"
 					/>
 				</label>
 			</form>

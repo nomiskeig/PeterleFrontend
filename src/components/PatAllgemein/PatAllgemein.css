@@ -10,3 +10,11 @@
     padding: 8px;
     font-size: 20px
 }
+
+.Textfeld {
+    height: 50%
+}
+
+.restrictedHeight {
+    height: 20px !important
+}
