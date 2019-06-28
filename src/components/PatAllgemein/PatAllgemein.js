@@ -8,22 +8,22 @@ function PatAllgemein(props) {
 	return (
 		<div className="PatAllgemeinAlles Background">
 			<div className="Grid2">
-				<div className="Box">
+				<div className="Box restrictedHeight">
 					{props.data ? props.data.allgemein.vorname : ""}
 				</div>
-				<div className="Box">
+				<div className="Box restrictedHeight">
 					{props.data ? props.data.allgemein.nachname : ""}
 				</div>
 				<div className="Flex">
-					<div className="Box">
+					<div className="Box restrictedHeight">
 						{props.data ? props.data.allgemein.addresse.plz : ""}
 					</div>
-					<div className="Box FlexGrow">
+					<div className="Box FlexGrow restrictedHeight">
 						{props.data ? props.data.allgemein.addresse.ort : ""}
 					</div>
 				</div>
 				<div className="Flex">
-					<div className="Box">
+					<div className="Box restrictedHeight">
 						{props.data ? props.data.allgemein.gebdatum : ""}
 					</div>
 					<PassiveCheckBox
