@@ -1,0 +1,58 @@
+{
+	"patienten": [
+		{
+			"id": 1,
+			"privat": true,
+			"allgemein": {
+				"vorname": "Simon",
+				"nachname": "Giek",
+				"alter": 17,
+				"gebdatum": "22.01.1999",
+				"addresse": {
+					"straße": "Karlstraße",
+					"hausnummer": 2,
+					"plz": 75196,
+					"ort": "Remchingen"
+				},
+				"nummern": {
+					"mobil": "1134",
+					"privat": "34563",
+					"arbeit": "467856"
+				},
+				"rechnungsempfaenger": "Simon",
+				"bemerkungen": "Dies das tralladksgf nöalskngöakod sfgnoifnbpa ofignpd ofingö akfngökfdngoi afngöadfkngöksdfnb ölksdfnböksfdnbklsdnfbiodfnboidnö föb kldfnöbiodnböoid nföoirnböoirnöbionröoignöiogn  söoinöhgoisroighisdkfgjklk jksdlfjgöiojgsokj ölk jösdjfgöoij ökj ösdjfgöio esrjögio ö",
+				"krankheiten": "Fieber Kopfweh dies das aksgöksngöknsgökanfhoiajgoijaoignaiergnauervbabgüdiobaoigb oibvo ibaüogibapoibvoib pobvpaoubgoaiebervio bpcsbvpouabgpoiuarbguibavio bsubvpaubgparoibg"
+			},
+			"behandlungen": [
+				{
+					"id": 1,
+					"datum": "1.7.2018",
+					"art": "Besuch",
+					"masnahme": "Gegenmittel gegeben",
+					"mittel": "Mittel",
+					"notiz": "Hier könnte Ihadfasdfasdfasdfasdfsdfdsre Notiz stehen",
+					"beobachten": "Hier steht eine Beobachtung"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"privat": false,
+			"allgemein": {
+				"vorname": "Manuel",
+				"nachname": "Giek",
+				"alter": 17,
+				"addresse": {
+					"straße": "Karlstraße",
+					"hausnummer": 2,
+					"plz": 75196,
+					"ort": "Remchingen"
+				},
+				"nummern": {
+					"privat": 1
+				},
+				"rechnungsempfaenger": "Manuel"
+			}
+		}
+	]
+}
