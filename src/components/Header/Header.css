@@ -1,0 +1,31 @@
+.header a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 4px 10px 4px 10px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+	background-color: white;
+	margin-right: 4px;
+	border: 1px solid black;
+	width: 80px;
+}
+
+.header a:hover {
+	background-color: lightgray;
+	font-weight: bold;
+}
+
+.header {
+	background-color: gray;
+	width: 100%;
+	height: auto;
+	border-bottom: 4px solid black;
+	padding: 4px;
+}
+
+.active {
+	background-color: lightblue !important;
+}

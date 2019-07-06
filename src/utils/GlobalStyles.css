@@ -36,7 +36,7 @@
 	margin: 5px 10px 5px 10px;
 	min-width: 50px;
 	overflow: hidden;
-	height: auto
+	height: auto;
 }
 
 .CheckBoxPassiv {
@@ -112,6 +112,7 @@
 	padding: 0.2em;
 	width: 200px;
 	margin-left: 0px;
+	height: 16px;
 	/*box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.7);*/
 }
 
@@ -132,7 +133,7 @@ textarea {
 	margin: 4px;
 	padding: 0.2em;
 	margin-left: 0px;
-	resize: none
+	resize: none;
 }
 
 textarea:hover {
@@ -149,4 +150,15 @@ button {
 
 .invisible {
 	visibility: hidden;
+}
+
+.Pagewrapper {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+}
+
+.Main {
+	display: flex;
+	flex-direction: column;
 }

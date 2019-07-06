@@ -1,7 +1,7 @@
 .MainAlles {
 	display: grid;
 	flex-direction: row;
-	background-color: #ffff99;
+	background-color: #ffff99 !important;
 	height: 100%;
 	width: 100vw;
 	flex-wrap: wrap;

@@ -1,41 +1,43 @@
 .SucheAlles {
-    background-color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+	background-color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 button {
-    margin-top: 20px
+	margin-top: 20px;
 }
 
-.SucheAlles>div>div {
-    margin: 10px;
+.SucheAlles > div > div {
+	margin: 10px;
 }
 
-.rand>button {
-    display: block;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: 10px
+.rand > button {
+	display: block;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-top: 10px;
 }
 
 .rand {
-    border: 6px solid black;
-    width: 400px;
-    padding: 40px;
-    padding-top: 0px;
-    margin-top: 20px !important;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    border-radius: 40px;
-    background: #ffff99;
-    display: flex;
-    flex-direction: column;
+	border: 6px solid black;
+	width: 400px;
+	padding: 40px;
+	padding-top: 0px;
+	margin-top: 20px !important;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	border-radius: 40px;
+	background: #ffff99;
+	display: flex;
+	flex-direction: column;
 }
 
 .breiterButton {
-    width: 250px !important;
+	width: 250px !important;
 }

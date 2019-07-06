@@ -6,6 +6,8 @@ import "../../utils/GlobalComponents";
 import "./Kontakt.css";
 import LinkButton from "../../components/LinkButton/LinkButton";
 import axios from "axios";
+import Sidebar from "../../components/Sidebar/Sidebar";
+import Header from "../../components/Header/Header";
 
 var patientenData = require("../../patienten.json");
 
@@ -57,19 +59,29 @@ class Kontakt extends React.Component {
 		);
 
 		return (
-			<div className="KontaktAlles BackgroundLightblue Grid1">
-				<PatAllgemein
-					data={this.state.patientGesamt ? this.state.patientGesamt : null}
-				/>
-				<Behandlungentabelle
-					data={this.state.patientGesamt ? this.state.patientGesamt : null}
-					callback={this.tabellencallback}
-				/>
+			<div className="Pagewrapper">
+				<Sidebar location={this.props.location} />
+				<div className="Main">
+					<Header match={this.props.match} kontakt={true} />
 
-				<div className="Buttons flex">
-					<LinkButton name="Zurück" path={"/Main/" + this.state.id} />
-					<LinkButton name="Neu" path={"/NeueBehandlung/" + this.state.id} />
-					<button onClick={this.deleteBehandlung}> Löschen </button>
+					<div className="KontaktAlles BackgroundLightblue Grid1">
+						<PatAllgemein
+							data={this.state.patientGesamt ? this.state.patientGesamt : null}
+						/>
+						<Behandlungentabelle
+							data={this.state.patientGesamt ? this.state.patientGesamt : null}
+							callback={this.tabellencallback}
+						/>
+
+						<div className="Buttons flex">
+							<LinkButton name="Zurück" path={"/Main/" + this.state.id} />
+							<LinkButton
+								name="Neu"
+								path={"/NeueBehandlung/" + this.state.id}
+							/>
+							<button onClick={this.deleteBehandlung}> Löschen </button>
+						</div>
+					</div>
 				</div>
 			</div>
 		);

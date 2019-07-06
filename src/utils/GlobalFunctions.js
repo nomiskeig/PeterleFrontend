@@ -1,11 +1,8 @@
-export function getPatientData() {
-	// braucht ne api
-	var fs = require("fs");
+import axios from "axios";
 
-	fs.read("../patienten.json", function ok(err, data) {
-		if (err) {
-			console.log(err);
-		}
-		return JSON.parse(data);
+export function getPatienten() {
+	axios.get("http://127.0.0.1:4000/api/patienten/").then(response => {
+		const baum = response.data;
+		return baum;
 	});
 }

@@ -1,0 +1,9 @@
+.Sidebar {
+	height: 100vh;
+	background-color: gray;
+	border-right: 4px solid black;
+}
+
+h1 {
+	margin-left: 10px;
+}
