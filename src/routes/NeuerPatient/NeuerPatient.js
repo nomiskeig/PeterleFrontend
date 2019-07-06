@@ -43,7 +43,7 @@ class NeuerPatient extends React.Component {
 						name="Nachname:"
 						callback={data => this.setState({ nachname: data })}
 					/>
-					<button onClick={this.PatientSpeichern}>wtf</button>
+					<button onClick={this.PatientSpeichern}>Speichern</button>
 				</div>
 			</div>
 		);
